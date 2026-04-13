@@ -1,6 +1,23 @@
 ---
 title: "owner-analysis"
+author: Rafael Fernandez
 format: html
 ---
 
+<<<<<<< HEAD
 x
+=======
+```{r}
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(here)
+```
+
+
+```{r}
+lobster_abundance <- read_csv(here::here("data/Lobster_Abundance_All_Years_20220829.csv"))
+```
+thisdata looks like its analyzing all types of aquatic life at specific sites and at specific times
+>>>>>>> 60318f1a8a2223befa7556964b430d0f8b28b956
