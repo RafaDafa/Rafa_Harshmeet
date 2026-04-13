@@ -4,8 +4,7 @@ author: Rafael Fernandez
 format: html
 ---
 
-HEAD
-x
+
 =======
 ```{r}
 library(readr)
@@ -20,4 +19,18 @@ library(here)
 lobster_abundance <- read_csv(here::here("data/Lobster_Abundance_All_Years_20220829.csv"))
 ```
 thisdata looks like its analyzing all types of aquatic life at specific sites and at specific times
+
+```{r}
+lobster_abundance <- lobster_abundance %>% 
+    mutate(SIZE_MM = na_if(SIZE_MM, -99999))
+not_napl <- lobster_abundance %>% 
+    filter(SITE != "NAPL")
+aque_70mm <- lobster_abundance %>% 
+    filter(SITE == "AQUE" & SIZE_MM >= 70)
+# `group_by() %>% summarize()` practice
+
+max_lobster <- lobster_abundance %>% 
+  group_by(SITE, MONTH) %>% 
+  summarize(MAX_LENGTH = max(SIZE_MM, na.rm = TRUE))
+```
 
