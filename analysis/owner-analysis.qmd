@@ -84,7 +84,5 @@ ggplot(data = lobster_size_lrg, aes(x = SITE, y = COUNT, fill = SIZE_BIN)) +
 ggplot(data = lobster_size_lrg, aes(x = SITE, y = COUNT, fill = SIZE_BIN)) +
     geom_col(position = "dodge")
 ```
-```{r}
 
-```
 
