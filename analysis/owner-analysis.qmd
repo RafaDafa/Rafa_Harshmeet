@@ -57,6 +57,11 @@ lobsters_summarize <- lobster_abundance %>%
   group_by(SITE, YEAR) %>% 
   summarize(COUNT = n())
 ```
+
+
+
+
+
 ```{r}
 # line plot
 ggplot(data = lobsters_summarize, aes(x = YEAR, y = COUNT)) +
@@ -67,6 +72,28 @@ ggplot(data = lobsters_summarize, aes(x = YEAR, y = COUNT)) +
   geom_point(aes(color = SITE)) +
   geom_line(aes(color = SITE)) 
 ```
+
+```{r}
+dir.create("figs")
+```
+
+
+
+```{r}
+p_line <- ggplot(data = lobsters_summarize, aes(x = YEAR, y = COUNT)) +
+  geom_point(aes(color = SITE)) +
+  geom_line(aes(color = SITE))
+
+ggsave("figs/lobster_line_plot.png", plot = p_line, width = 8, height = 5)
+```
+
+
+
+
+
+
+
+
 ```{r}
 lobster_size_lrg <- lobster_abundance %>%
     filter(YEAR %in% c(2019, 2020, 2021)) %>%
