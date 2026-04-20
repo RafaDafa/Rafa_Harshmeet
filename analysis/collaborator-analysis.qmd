@@ -37,7 +37,10 @@ carp_20_traps <- lobster_traps %>%
 
 ```{r}
 # `group_by() %>% summarize()` practice
-max_lobster_traps <- lobster_traps %>% 
-    group_by(SITE, MONTH) %>%
-    summarize(MAX_TRAPS = max(TRAPS, na.rm = TRUE))
+
+max_lobster <- lobster_abundance %>% 
+  group_by(SITE, MONTH) %>% 
+  summarize(MAX_LENGTH = max(SIZE_MM, na.rm = TRUE))
 ```
+
+
