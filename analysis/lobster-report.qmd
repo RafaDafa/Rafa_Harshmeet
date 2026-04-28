@@ -4,3 +4,14 @@ author: Harshmeet & Rafa
 format: html
 ---
 
+Data Citation: <https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.8> This data was aquired April 20,2026
+
+Abstract:
+
+Owner Analysis: 
+
+![Line and point plot showing lobster counts over time across different sites](figs/lobster_line_plot.png)
+
+
+
+
