@@ -4,30 +4,26 @@ author: Harshmeet & Rafa
 format: html
 ---
 
-Data Citation: <https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-sbc.77.8> This data was aquired April 20,2026
-
-
-=======
-## Data Source
+======= \## Data Source
 
 The data were obtained from the Environmental Data Initiative (EDI) Data Portal, downloaded on April 20, 2026.
 
-https://portal.edirepository.org/nis/metadataviewer?packageid=knb-lter-sbc.77.8
+<https://portal.edirepository.org/nis/metadataviewer?packageid=knb-lter-sbc.77.8>
 
 ## Abstract Summary
 
 This dataset tracks the abundance, size, and fishing pressure of California spiny lobster (*Panulirus interruptus*) along the Santa Barbara Channel. It includes long-term data from kelp forest sites both inside and outside Marine Protected Areas, allowing researchers to examine how fishing activity influences lobster populations and ecosystem dynamics.
 
 ## Owner Analysis and Visualization
-Owner Analysis: 
+
+Owner Analysis:
 
 ![Line and point plot showing lobster counts over time across different sites,this shows how many traps were placed in specific areas and measured by count over the course of 9 years (2012-2021). Each line is colored to represent what type of fish or aquatic creature the trap is looking to trap. Some of the sites saw a constant amount of traps over the years while others would increase or decrease in specific years, potentially indicating changes in fishing laws. During 2020, there was a large dropoff, potentially from the slowdown of commerce an trade during the COVID-19 pandemic.](figs/lobster_line_plot.png)
 
-Description of plot: The plot that 
-## Collaborator Analysis and Visualization
+Description of plot: The plot that \## Collaborator Analysis and Visualization
 
 ![This line and point plot shows the total number of lobster traps recorded over time (2012–2021) across multiple sites. Each colored line represents a different site, allowing comparison of temporal trends in fishing activity. Overall, sites such as CARP and AQUE consistently show higher trap counts compared to others, indicating greater fishing pressure in those areas. Many sites exhibit fluctuations over time, with noticeable peaks around 2016 and 2020, suggesting periods of increased fishing activity. In contrast, some sites (e.g., AHND and related categories) maintain relatively low and stable trap counts throughout the study period. A sharp drop in trap counts is observed across nearly all sites in 2021, which may reflect incomplete data collection or a significant reduction in fishing activity during that year.](figs/lobster_line_plot.png){fig-cap="Figure: Lobster trap counts over time by site"}
 
 ## Summary
-This file shows is to show my partner and my proficiency in collaboration, we were able to work both simultaneously as well as separately on a file without issues. We learned how to share pull requests to update our own files as well as merge files together seamlessly.
 
+This file shows is to show my partner and my proficiency in collaboration, we were able to work both simultaneously as well as separately on a file without issues. We learned how to share pull requests to update our own files as well as merge files together seamlessly.
