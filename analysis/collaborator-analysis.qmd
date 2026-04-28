@@ -83,6 +83,28 @@ ggplot(data = lobsters_traps_summarize, aes(x = YEAR, y = TOTAL_TRAPS)) +
     geom_line(aes(color = SITE))
 ```
 
+
+```{r}
+p_line <- ggplot(data = lobsters_traps_summarize, aes(x = YEAR, y = TOTAL_TRAPS)) +
+    geom_point(aes(color = SITE)) +
+    geom_line(aes(color = SITE))
+
+dir.create("figs", showWarnings = FALSE)
+
+ggsave("figs/lobster_line_plot.png", plot = p_line, width = 8, height = 5)
+```
+
+
+
+
+
+
+
+
+
+
+
+
 ```{r}
 lobster_traps_fishing_pressure <- lobster_traps %>% 
     filter(YEAR %in% c(2019, 2020, 2021)) %>%
@@ -101,4 +123,4 @@ ggplot(data = lobster_traps_fishing_pressure, aes(x = SITE, y = COUNT, fill = FI
 ggplot(data = lobster_traps_fishing_pressure, aes(x = SITE, y = COUNT, fill = FISHING_PRESSURE)) +
     geom_col(position = "dodge")
 ```
-Test 123
+
